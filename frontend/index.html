@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div id="root" class="container">
+    <h1 class="text-center">Tic Tac Toe Game</h1>
+
+    <div id="game-menu">
+      <p>Choose mode:</p>
+      <button id="single-player-button">Single Player</button>
+      <button id="two-player-button">Two Player</button>
+
+      <div id="grid-options" class="hidden">
+        <p>Choose grid size:</p>
+        <button class="grid-button" data-size="3">3x3</button>
+        <button class="grid-button" data-size="5">5x5</button>
+        <button class="grid-button" data-size="7">7x7</button>
+      </div>
+
+      <div id="difficulty-options" class="hidden">
+        <p>Choose difficulty:</p>
+        <button class="difficulty-button" data-level="easy">Easy</button>
+        <button class="difficulty-button" data-level="unbeatable">Unbeatable</button>
+      </div>
+    </div>
+
+    <div id="game-board"></div>
+    <div id="turn-box" class="hidden"></div>
+    <div id="info-box" class="hidden"></div>
+    <div id="winner-box" class="hidden"></div>
+    <button id="reset-button" class="hidden">Reset Game</button>
+  </div>
+
+  <!-- Load menu.js as ES module -->
+  <script type="module" src="./menu.js"></script>
+</body>
+</html>
